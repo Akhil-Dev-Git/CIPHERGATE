@@ -1,0 +1,54 @@
+node_modules/
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Logs
+*.log
+logs/
+
+# macOS
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
+.cursor/
+
+# Replit
+.local/
+.replit
+
+# Generated photos and exports
+captured_photos/
+captures/
+exports/
+
+# Temporary files
+temp/
+__create/
+project dataset/
+known_faces/
+local_database.json
+
+# Mobile
+mobile/caches/
+mobile/public/*.wasm
+
+# Python cache folders
+.pytest_cache/
+.mypy_cache/
+
+# Environment variables
+.env
+
+# Ignore SQLite database (optional)
+face_detection.db
+
+# Ignore trained model if you don't want to upload it
+face_recognition_model.pkles
