@@ -19,7 +19,7 @@ import React, {
   type FC,
   Component,
 } from 'react';
-import './global.css';
+import stylesheet from './global.css?url';
 
 import fetch from '@/__create/fetch';
 // @ts-ignore
@@ -34,7 +34,9 @@ import { useSandboxStore } from '../__create/hmr-sandbox-store';
 import type { Route } from './+types/root';
 import { useDevServerHeartbeat } from '../__create/useDevServerHeartbeat';
 
-export const links = () => [];
+export const links = () => [
+  { rel: "stylesheet", href: stylesheet },
+];
 
 if (globalThis.window && globalThis.window !== undefined) {
   globalThis.window.fetch = fetch;
