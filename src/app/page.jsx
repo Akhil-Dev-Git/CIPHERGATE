@@ -16,11 +16,11 @@ export default function CiphergateLandingPage() {
         </div>
         
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-gray-400">
-          <a href="#" className="text-white transition-colors">Home</a>
-          <a href="#" className="hover:text-white transition-colors">Products</a>
-          <a href="#" className="hover:text-white transition-colors">Features</a>
-          <a href="#" className="hover:text-white transition-colors">FAQ</a>
-          <a href="#" className="hover:text-white transition-colors">Contact</a>
+          <button onClick={() => alert("Navigating to Home...")} className="text-white transition-colors hover:text-gray-300">Home</button>
+          <button onClick={() => alert("Loading Products...")} className="hover:text-white transition-colors">Products</button>
+          <button onClick={() => alert("Loading Features...")} className="hover:text-white transition-colors">Features</button>
+          <button onClick={() => alert("Loading FAQ...")} className="hover:text-white transition-colors">FAQ</button>
+          <button onClick={() => alert("Loading Contact form...")} className="hover:text-white transition-colors">Contact</button>
         </div>
 
         <div className="hidden md:flex items-center">
@@ -58,13 +58,19 @@ export default function CiphergateLandingPage() {
           </p>
           
           <div className="flex flex-wrap items-center gap-4 pt-4">
-            <button className="px-8 py-3.5 rounded-full border border-gray-600 font-medium hover:bg-gray-800 transition-all">
+            <button 
+              onClick={() => alert("Demo request submitted! Our engineering team will contact you shortly.")}
+              className="px-8 py-3.5 rounded-full border border-gray-600 font-medium hover:bg-gray-800 transition-all"
+            >
               Request Demo
             </button>
-            <button className="px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all flex items-center gap-2 group">
+            <Link 
+              to="/login"
+              className="px-8 py-3.5 rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-all flex items-center gap-2 group"
+            >
               Get Started
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
+            </Link>
           </div>
         </div>
 
