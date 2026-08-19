@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Menu } from 'lucide-react';
+import { Link } from 'react-router';
 
 export default function CiphergateLandingPage() {
   return (
@@ -23,9 +24,9 @@ export default function CiphergateLandingPage() {
         </div>
 
         <div className="hidden md:flex items-center">
-          <a href="#" className="px-6 py-2.5 text-sm font-semibold rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
+          <Link to="/login" className="px-6 py-2.5 text-sm font-semibold rounded-full border border-gray-700 hover:bg-gray-800 transition-colors">
             Log In <span className="ml-1">→</span>
-          </a>
+          </Link>
         </div>
 
         <button className="md:hidden text-white">
